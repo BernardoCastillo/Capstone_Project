@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <div id="navbar">
+            <h1>Workout Tracker</h1>
+            <div id="links">
+                <p id="toWorkouts" class="link">Workouts</p>
+                <p id="toHistory" class="link">History</p>
+                <p id="toTimer" class="link">Timer</p>
+                <p id="toInfo" class="link">Info</p>
+            </div>
+        </div>
+        <div id="workoutContainer">
+            <h2>Workouts:</h2>
+            <label for="workoutSelection">Select Workout:</label>
+            <br>
+            <select name="workoutSelection" id="workoutSelection">
+                <option value="walking">Walking</option>
+                <option value="running">Running</option>
+                <option value="swimming">Swimming</option>
+                <option value="weights">Weights</option>
+                <option value="hiking">Hiking</option>
+                <option value="yoga">Yoga</option>
+                <option value="rockClimbing">Rock Climbing</option>
+                <option value="dancing">Dancing</option>
+            </select>
+            <br>
+            <label for="time">Select Workout Time: (minutes)</label>
+            <br>
+            <input type="number" id="workoutTime">
+            <br>
+            <label for="intensitySelection">Select Intensity:</label>
+            <br>
+            <select name="intensitySelection" id="intensitySelection">
+                <option value="light">Light</option>
+                <option value="moderate">Moderate</option>
+                <option value="intense">Intense</option>
+                <option value="extreme">Extreme</option>
+            </select>
+            <br>
+            <div id="workoutWarning">Enter a time value greater than 0.</div>
+            <button id="completeTracking">Complete</button>
+        </div>
+        <div id="historyContainer">
+            <div class="historyArea">
+                <h2>History</h2>
+                <p class="faded">Newest workouts appear at the bottom...</p>
+                <label for="search">Search by workout type, time, or intensity.</label>
+                <br>
+                <input type="text" placeholder="Search" id="search">
+                <div id="pastWorkouts">
+
+                </div>
+                <div id="pastCount">
+                    <span id="historyCount"></span>
+                </div>
+                <button id="deleteAllHistory">Delete All</button>
+            </div>
+        </div>
+        <div id="timerContainer">
+            <div class="timerArea" id="clockContainer">
+                <h2>Timer</h2>
+                <p id="timer"><span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>:<span id="milliseconds">00</span></p>
+                <div class="timerButtons">
+                    <button id="startTimer" class="timerBtn">Start</button>
+                    <button id="pauseTimer" class="timerBtn">Pause</button>
+                    <button id="clearTimer" class="timerBtn">Clear</button>
+                </div>
+            </div>
+        </div>
+        <div id="infoContainer">
+            <div class="square">
+                <div class="item">Most Common Workout: 
+                    <div class="infoBox">
+                        <div id="mostWorkout" class="infoValue"></div>
+                    </div>
+                </div>
+                <div class="item">Most Common Intensity: 
+                    <div class="infoBox">
+                        <div id="mostIntensity" class="infoValue"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="square">
+                <div class="item">Total Number of Workouts: 
+                    <div class="infoBox">
+                        <div id="totalWorkout" class="infoValue"></div>
+                    </div>
+                </div>
+                <div class="item">Total Workout Time: (minutes) 
+                    <div class="infoBox">
+                        <div id="totalTime" class="infoValue"></div>
+                    </div>
+                </div>
+            </div>
+            <button id="clearStorage">Clear Info</button>
+        </div>
+        <footer class="copyright">
+            &copy; 2025 Bernardo Castillo. All Rights Reserved
+        </footer>
+    </main>
+    <script src="javascript-files/history.js"></script>
+    <script src="javascript-files/search.js"></script>
+    <script src="javascript-files/workout.js"></script>
+    <script src="javascript-files/timer.js"></script> 
+    <script src="javascript-files/info.js"></script>  
+</body>
+</html>
