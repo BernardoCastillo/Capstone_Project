@@ -432,7 +432,7 @@ input{
 - Then it goes container by container, so `workoutContainer`, `historyContainer`, `timerContainer`, and then finally `infoContainer`.
 - All containers but the `workoutContainer` are hidden by default. The containers are shown and hidden by JavaScript functions.
 - All buttons have `cursor: pointer`, along with `:hover` and `transitions` to make sure they look good.
-- `display:flex` is used in history, timer and info in order to have inline boxes.
+- `display:flex` is used in history, timer and info.
 - At the very bottom are the `media queries`, these `queries` are to make sure the website works no matter the screen size.
 
 ## JavaScript Functionality
