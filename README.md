@@ -426,7 +426,7 @@ input{
 - The CSS is structured by container.
 - At the very top, are things that will affect everything. Things like the `*`, or `body`.
 - `Navbar` and `footer` both never change, so they stay the same no matter what.
-- All margins are 0, all paddings are 0, and a `font-family` and `box-sizing` are set.
+- All `margins` are 0, all `paddings` are 0, and a `font-family` and `box-sizing` are set.
 - The `body` `width` is cut in half in order to center the containers.
 - The `main` tag (where everything shown is stored), is centered with margins.
 - Then it goes container by container, so `workoutContainer`, `historyContainer`, `timerContainer`, and then finally `infoContainer`.
