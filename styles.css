@@ -12,7 +12,9 @@ body{
 }
 main{
     border: 2px solid black;
-    margin: 70px 50px 50px 100px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.338);
+    background-color: white;
+    margin: 70px 50px 50px 100px; /* Centers the page */
     height: auto;
 }
 #navbar{
