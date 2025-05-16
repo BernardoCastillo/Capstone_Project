@@ -282,9 +282,11 @@ function capitalFirstLetter(word){
 // workout.js
 
 submitBtn.addEventListener('click', submitWorkout);
-// search.js
-
-searchInput.addEventListener('input', searchFor);
+document.body.addEventListener('keypress', function(e){
+    if(e.key == 'Enter'){
+        submitWorkout();
+    }
+});
 ```
 ## Real-time Search & History
 ### Real-time Search
