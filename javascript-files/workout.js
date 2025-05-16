@@ -171,3 +171,8 @@ toHistory.addEventListener('click', function(){
     historyContainer.style.display = "block";
 })
 submitBtn.addEventListener('click', submitWorkout);
+document.body.addEventListener('keypress', function(e){
+    if(e.key == 'Enter'){
+        submitWorkout();
+    }
+});
